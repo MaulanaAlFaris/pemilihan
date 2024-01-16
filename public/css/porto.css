@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: green;
+    background-color: black;
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+}
+.navbar-background{
+    background-color: white;
+    height: 70px;
+}
+.navbar-background li{
+    color: black;
+}
+.li-list-navbar{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+    place-items: center;
+}
+.li-list-navbar .logo{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+}
+.logo img{
+    height: 50px;
+    width: 135px;
+}
+.homebarsec1{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF0D2;
+    color: black;
+}
+.homebarsec1-bg{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.homebar1{
+    height: 200px;
+    width: 570px;
+    white-space: break-spaces;
+}
+.homebar1 p{
+    text-align: justify;
+}
+.homebar1-logo{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.homebar1-logo img{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.homebarsec2{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF0D2;
+    color: black;
+}
+.gambar-struktur{
+    width: 90%;
+    height: 80%;
+}
+.gambar-struktur img{
+    width: 100%;
+    height: 570px;
+}
+
+.homebarsec2-title-bg{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+
+.homebarsec2-title-bg h2{
+    top: 5%;
+    position: absolute;
+}
+.homebarsec2-bg{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.homebar2{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 5%;
+}
+.foto-organisasi{
+    width: 100%;
+    height: 100%;
+}
+.foto-organisasi img{
+    width: 100%;
+    height: 100%;
+}
+.card-homebar2{
+    height: 300px;
+    width: 350px;
+    background-color: rgb(103, 220, 103);
+    color: #232E35;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card-homebar2 p{
+    font-size: 13px;
+    text-align: justify;
+}
+.logo-card-homebar2{
+    height: 50px;
+    position: relative;
+    top: 10px;
+}
+.logo-card-homebar2 img{
+    height: 50px;
+    width: 50px;
+}
+.homebarsec3{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF0D2;
+    color: black;
+}
+.homebarsec3-title-bg{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+.homebarsec3-bg{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.homebar3{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 10%;
+}
+.card-homebar3{
+    height:500px;
+    width: 300px;
+    background-color: rgb(103, 220, 103);
+    color: #232E35;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+.logo-card-homebar3{
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    height: 250px;
+    width: 300px;
+}
+.logo-card-homebar3 img{
+    height: 250px;
+    width: 300px;
+}
+.card-homebar3 h2{
+    font-size: 14px;
+}
+.card-homebar3 p{
+    font-size: 13px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.homebarsec4{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF0D2;
+    color: black;
+}
+.homebarsec4-title-bg{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+.homebarsec4-bg{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.homebar4{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 10%;
+}
+.card-homebar4{
+    height:500px;
+    width: 300px;
+    background-color: rgb(103, 220, 103);
+    color: #232E35;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    border-radius: 20px;
+}
+.logo-card-homebar4{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+.logo-card-homebar4 img{
+    height: 400px;
+    width: 300px;
+}
+.card-homebar4 h2{
+    height: 100%;
+}
+
+.homebarsec5{
+    height: 35vh;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.homebarsec5-title-bg{
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+.homebarsec5-bg{
+    display: flex;
+    position: absolute;
+    height: 35vh;
+    width: 100%;
+}
+.homebar5{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 25%;
+}
+.card-homebar5{
+    height:150px;
+    width: 400px;
+    background-color: rgb(103, 220, 103);
+    color: #232E35;;
+    display: grid;
+    justify-content: center;
+    text-align: justify;
+    position: relative;
+    border-radius: 40px;
+}
+.logo-card-homebar5{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 5px;
+}
+.logo-card-homebar5 img{
+   height: 30px;
+   width: 30px;
+}
+.hombarsec5-title{
+    position: relative;
+    top: 5px;
+}
+.card-homebar5 h2{
+    justify-content: center;
+    font-size: 16px;
+}
+.card-homebar5 h3{
+    justify-content: center;
+    font-size: 12px;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 5px;
+    /* list-style: none; */
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.title-h1{
+    font-size: 20px;
+    text-align: center;
+}
+.content-main-pdf-bg{
+    overflow: hidden;
+}
+.bab{
+    font-size: 15px;
+}
+.p{
+    font: 12px;
+    text-align: left;
+}
+.uraian-content{
+    white-space: pre-line;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.buttonPDF{
+    justify-content: center;
+    display: flex;
+}

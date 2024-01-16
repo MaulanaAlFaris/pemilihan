@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+}
+button:hover{
+    background-color: rgb(203, 22, 22);
+    cursor: pointer;
+}
+.main-body-background{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    background-color: #FFF0D2;
+    height: 100%;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.main-content{
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+.navbar-background{
+    width: 100%;
+}
+.nav-list{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 22px;
+    width: 93%;
+}
+.nav-list li{
+    display: flex;
+}
+.nav-list button{
+    border-radius: 50px;
+}
+header{
+    background-color: white;
+    width: 100%;
+}
+footer{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 15%;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.footer-background{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.footer-list{
+    position: relative;
+    color: white;
+    height: 82%;
+    width: 90%;
+    top: 33px;
+    left: 85px;
+    justify-content: center;
+    display: flex;
+}
+.footer-list a{
+    font-size: 14px;
+    height: 20px;
+    color: white;
+    text-decoration: none;
+}
+.footer-list a:hover{
+    color: white;
+}
+.sidebar-list{
+    justify-content: center;
+}
+.sidebar-button-list{
+    background-color: green;
+}
+.content-main-bg{
+    height: 100%;
+    width: 100%;
+}
+.content-main-create-bg{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.content-main-edit-bg{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+ul.listing-kec-kel{
+    display: grid;
+    height: 150px;
+    width: 200px;
+    position: sticky;
+}
+ul.dropdown-menu{
+    height: 200px;
+    width: 280px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.container-name{
+    height: 25px;
+    top: 5px;
+    position: relative;
+}
+.container-name h1{
+    font-size: 20px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
