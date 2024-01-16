@@ -4,10 +4,8 @@
     <div class="container">
         <h2>Tambah Data Pemilihan Presiden</h2>
 
-        <!-- Form untuk menambahkan data -->
         <form action="{{ route('superadmin.presiden.store') }}" method="post">
             @csrf
-            <!-- Tambahkan input untuk setiap kolom sesuai kebutuhan -->
             <ol type="I">
                 <b><li>DATA PEMILIH DAN PENGGUNA HAK PILIH</li></b>
                     <br>
@@ -159,7 +157,7 @@
             var b1p = parseFloat(document.getElementById('b1p').value) || 0;
             var bj1 = b1l + b1p;
             document.getElementById('b1j').value = bj1;
-            hitungOtomatisBj4(); // Panggil fungsi hitungOtomatisBj4 setiap kali b1j diubah
+            hitungOtomatisBj4();
         }
 
         document.getElementById('b1l').addEventListener('input', hitungOtomatisBj1);
@@ -170,7 +168,7 @@
             var b2p = parseFloat(document.getElementById('b2p').value) || 0;
             var bj2 = b2l + b2p;
             document.getElementById('b2j').value = bj2;
-            hitungOtomatisBj4(); // Panggil fungsi hitungOtomatisBj4 setiap kali b2j diubah
+            hitungOtomatisBj4();
         }
 
         document.getElementById('b2l').addEventListener('input', hitungOtomatisBj2);
@@ -181,7 +179,7 @@
             var b3p = parseFloat(document.getElementById('b3p').value) || 0;
             var bj3 = b3l + b3p;
             document.getElementById('b3j').value = bj3;
-            hitungOtomatisBj4(); // Panggil fungsi hitungOtomatisBj4 setiap kali b3j diubah
+            hitungOtomatisBj4(); 
         }
 
         document.getElementById('b3l').addEventListener('input', hitungOtomatisBj3);
@@ -195,14 +193,10 @@
             document.getElementById('b4j').value = bj4;
         }
 
-        // Panggil fungsi hitungOtomatisBj4 setiap kali b1j, b2j, atau b3j diubah
         document.getElementById('b1j').addEventListener('input', hitungOtomatisBj4);
         document.getElementById('b2j').addEventListener('input', hitungOtomatisBj4);
         document.getElementById('b3j').addEventListener('input', hitungOtomatisBj4);
 
-        // ... Fungsi hitungOtomatisBj2, hitungOtomatisBj3, dan lainnya ...
-
-        // Fungsi untuk menghitung b4l dan b4p
         function hitungOtomatisB4lB4p() {
             var b1l = parseFloat(document.getElementById('b1l').value) || 0;
             var b2l = parseFloat(document.getElementById('b2l').value) || 0;
@@ -217,7 +211,6 @@
             document.getElementById('b4p').value = b4p;
         }
 
-        // Panggil fungsi hitungOtomatisB4lB4p setiap kali b1l, b2l, b3l, b1p, b2p, atau b3p diubah
         document.getElementById('b1l').addEventListener('input', hitungOtomatisB4lB4p);
         document.getElementById('b2l').addEventListener('input', hitungOtomatisB4lB4p);
         document.getElementById('b3l').addEventListener('input', hitungOtomatisB4lB4p);
@@ -227,129 +220,4 @@
     </script>
 
 
-    <!-- <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var al = parseFloat(document.getElementById('al').value) || 0;
-            var ap = parseFloat(document.getElementById('ap').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = al + ap;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('aj').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('al').addEventListener('input', hitungOtomatis);
-        document.getElementById('ap').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b1l = parseFloat(document.getElementById('b1l').value) || 0;
-            var b1p = parseFloat(document.getElementById('b1p').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b1l + b1p;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b1j').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b1l').addEventListener('input', hitungOtomatis);
-        document.getElementById('b1p').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b2l = parseFloat(document.getElementById('b2l').value) || 0;
-            var b2p = parseFloat(document.getElementById('b2p').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b2l + b2p;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b2j').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b2l').addEventListener('input', hitungOtomatis);
-        document.getElementById('b2p').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b3l = parseFloat(document.getElementById('b3l').value) || 0;
-            var b3p = parseFloat(document.getElementById('b3p').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b3l + b3p;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b3j').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b3l').addEventListener('input', hitungOtomatis);
-        document.getElementById('b3p').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b1l = parseFloat(document.getElementById('b1l').value) || 0;
-            var b2l = parseFloat(document.getElementById('b2l').value) || 0;
-            var b3l = parseFloat(document.getElementById('b3l').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b1l + b2l + b3l;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b4l').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b1l').addEventListener('input', hitungOtomatis);
-        document.getElementById('b2l').addEventListener('input', hitungOtomatis);
-        document.getElementById('b3l').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b1p = parseFloat(document.getElementById('b1p').value) || 0;
-            var b2p = parseFloat(document.getElementById('b2p').value) || 0;
-            var b3p = parseFloat(document.getElementById('b3p').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b1p + b2p + b3p;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b4p').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b1p').addEventListener('input', hitungOtomatis);
-        document.getElementById('b2p').addEventListener('input', hitungOtomatis);
-        document.getElementById('b3p').addEventListener('input', hitungOtomatis);
-    </script>
-    <script>
-        // Fungsi untuk melakukan perhitungan otomatis
-        function hitungOtomatis() {
-            var b1j = parseFloat(document.getElementById('b1j').value) || 0;
-            var b2j = parseFloat(document.getElementById('b2j').value) || 0;
-            var b3j = parseFloat(document.getElementById('b3j').value) || 0;
-
-            // Lakukan perhitungan sesuai kebutuhan
-            var hasil = b1j + b2j + b3j;
-
-            // Set nilai hasil ke input dengan id 'aj'
-            document.getElementById('b4j').value = hasil;
-        }
-
-        // Tambahkan event listener untuk memanggil fungsi hitungOtomatis saat nilai diubah
-        document.getElementById('b1j').addEventListener('input', hitungOtomatis);
-        document.getElementById('b2j').addEventListener('input', hitungOtomatis);
-        document.getElementById('b3j').addEventListener('input', hitungOtomatis);
-    </script> -->
 @endsection
