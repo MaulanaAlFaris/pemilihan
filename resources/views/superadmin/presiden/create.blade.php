@@ -77,30 +77,31 @@
                     <br>
                     <table class="table table-bordered">
                         <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
+                            <tr>
+                                <th scope="col" class="text-center">URAIAN</th>
+                                <th scope="col" class="text-center">JUMLAH</th>
+                            </tr>
+                            <tr>
+                                <td scope="col" class="text-center">(1)</td>
+                                <td scope="col" class="text-center">(2)</td>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td scope="col">1. Jumlah surat suara diterima, termasuk surat suara cadangan 2% dari DPT</td>
+                                <td scope="col"><input type="text" class="form-control" id="c1" name="c1" required></td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td scope="col">2. Jumlah surat suara yang digunakan</td>
+                                <td scope="col"><input type="text" class="form-control" id="c2" name="c2" required></td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td scope="col">3. Jumlah surat suara yang dikembalikan oleh pemilih (karena rusak atau keliru coblos)</td>
+                                <td scope="col"><input type="text" class="form-control" id="c3" name="c3" required></td>
+                            </tr>
+                            <tr>
+                                <td scope="col">4. Jumlah surat suara yang tidak digunakan terpakai, termasuk sisa surat suara cadangan</td>
+                                <td scope="col"><input type="text" class="form-control" id="c4" name="c4" required></td>
                             </tr>
                         </tbody>
                     </table>
@@ -108,30 +109,25 @@
                     <br>
                     <table class="table table-bordered">
                         <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
+                            <tr>
+                                <th scope="col" class="text-center">URAIAN</th>
+                                <th scope="col" class="text-center">LAKI-LAKI (L)</th>
+                                <th scope="col" class="text-center">PEREMPUAN (P)</th>
+                                <th scope="col" class="text-center">JUMLAH (L + P)</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">(1)</td>
+                                <td class="text-center">(2)</td>
+                                <td class="text-center">(3)</td>
+                                <td class="text-center">(4)</td>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td>Jumlah seluruh Pemilih disabilitas yang menggunakan hak pilih</td>
+                                <td><input type="text" class="form-control" id="dl" name="dl" required></td>
+                                <td><input type="text" class="form-control" id="dp" name="dp" required></td>
+                                <td><input type="text" class="form-control" id="dj" name="dj" readonly></td>
                             </tr>
                         </tbody>
                     </table>
@@ -217,6 +213,18 @@
         document.getElementById('b1p').addEventListener('input', hitungOtomatisB4lB4p);
         document.getElementById('b2p').addEventListener('input', hitungOtomatisB4lB4p);
         document.getElementById('b3p').addEventListener('input', hitungOtomatisB4lB4p);
+    </script>
+
+    <script>
+        function hitungOtomatis() {
+            var dl = parseFloat(document.getElementById('dl').value) || 0;
+            var dp = parseFloat(document.getElementById('dp').value) || 0;
+
+            var hasil = dl + dp;
+            document.getElementById('dj').value = hasil;
+        }
+        document.getElementById('dl').addEventListener('input', hitungOtomatis);
+        document.getElementById('dp').addEventListener('input', hitungOtomatis);
     </script>
 
 
